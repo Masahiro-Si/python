@@ -13,12 +13,13 @@
 #
 # Ответ: на 6-й день спортсмен достиг результата — не менее 3 км.
 
-start_distance = 3
-expected_result = 5
+a = 2
+b = 5
 days = 1
-while start_distance < expected_result:
-    print(f'{days}-й день:{start_distance:.2f}')
-    start_distance = start_distance * 1.1
+print(f'{days}-й день:{a}')
+while a < b:
+    a *= 1.1
     days += 1
+    print(f'{days}-й день: {a:.2f}')
 
-print(f'на {days}-й день спортсмен достиг результата не менее {expected_result}км.')
+print(f'\nОтвет: на {days}-й день спортсмен достиг результата не менее {b}км.')
