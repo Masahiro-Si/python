@@ -3,9 +3,12 @@
 # сохранить на своем месте. Для заполнения списка элементов необходимо использовать
 # функцию input() .
 
-ls = list(input('Введите элементы списка: '))
-index_el = 0
-for i in range(int(len(ls) / 2)):
-    ls[index_el], ls[index_el + 1] = ls[index_el + 1], ls[index_el]
-    index_el += 2
+# ls = list(input('Введите элементы списка: '))
+ls = ['1', '2', '3', 4, True, None, 'asd', 'dsa', 8]
+
+for i in ls[:-1: 2]:
+    a = ls.index(i)
+    ls[a], ls[a + 1] = ls[a + 1], ls[a]
+
 print(ls)
+
