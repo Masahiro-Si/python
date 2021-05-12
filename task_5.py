@@ -11,7 +11,7 @@
 def sum_numbers():
     calc = 0
     stop = False
-    while stop is False:
+    while not stop:
         user_numbers = input('Введите числа через пробел или "q" для выхода: ').split()
         for number in user_numbers:
             if number == 'q':
